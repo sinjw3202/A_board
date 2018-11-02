@@ -28,11 +28,16 @@
 			}
 			#SubBox{
 				margin-top: 100px;
-				margin-bottom: 50px;
+				margin-bottom: 200px;
 			}
-			#Guest{
-				margin-top: 5px;
+			.innerbutton{
+				margin: 0 5px 0 5px;
+				padding: 5px 15px 5px 15px;
 				font-size:1.2em;
+			}
+			.buttoncss{
+				color:white;
+				background-color: black;
 			}
 		</style>
 	</head>
@@ -43,11 +48,13 @@
 				<form>
 					<input type="text" placeholder="ID" class="InputBox" />
 					<input type="password" placeholder="PW" class="InputBox"/>
-					<input type="submit" value="Login">
+					<input type="submit" value="Login" class="buttoncss">
 				</form>
 			</div>
-			<form><input type="submit" value="Join" /></form>
-			<input type="button" value="Guest Visit" id="Guest"/>
+			<form>
+				<input type="submit" value="Join" class="buttoncss innerbutton" />
+				<input type="button" value="Guest Visit" class="buttoncss innerbutton" />
+			</form>
 		</div>
 	</body>
 </html>
